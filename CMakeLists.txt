@@ -13,3 +13,13 @@ set_target_properties(GraphZeppelinCommon PROPERTIES PUBLIC_HEADER
   "graph_zeppelin_common.h"
 )
 set_target_properties(GraphZeppelinCommon PROPERTIES LINKER_LANGUAGE CXX)
+
+#uncomment if manually installing project
+#without specifying INSTALL_PREFIX elsewhere
+#set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_BINARY_DIR}/GraphZeppelinCommon/prefix)
+
+# for use when building as an external project
+install(TARGETS GraphZeppelinCommon
+  ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+  PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
