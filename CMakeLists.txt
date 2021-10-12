@@ -20,6 +20,6 @@ set_target_properties(GraphZeppelinCommon PROPERTIES LINKER_LANGUAGE CXX)
 
 # for use when building as an external project
 install(TARGETS GraphZeppelinCommon
-  ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+#  ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
   PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
