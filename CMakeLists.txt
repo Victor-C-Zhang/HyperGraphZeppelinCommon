@@ -8,7 +8,8 @@ set(CMAKE_CXX_EXTENSIONS ON)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib)
 
 add_library(GraphZeppelinCommon
-    graph_zeppelin_common.h)
+    graph_zeppelin_common.h
+    dummy_file.cpp)
 set_target_properties(GraphZeppelinCommon PROPERTIES PUBLIC_HEADER 
   "graph_zeppelin_common.h"
 )
