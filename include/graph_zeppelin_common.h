@@ -3,6 +3,8 @@
 #define GROUP_NAME GraphZeppelin
 #define BUFFERING_NAME GutterTree
 
+#include <cstdint>
+
 // graph
 typedef uint32_t node_id_t; // Max graph vertices is 2^32 - 1 = 4 294 967 295
 typedef uint64_t edge_id_t; // Max number edges
